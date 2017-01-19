@@ -102,6 +102,8 @@ module.exports = Markclip =
       saveType = val
     @subscriptions.add atom.config.observe 'markclip.folderSpaceReplacer', (val) ->
       folderSpaceReplacer = val
+    @subscriptions.add atom.config.observe 'markclip.defaultFolder', (val) ->
+      defaultFolder = val
 
     # atom.contextMenu.add {
     #   'atom-text-editor': [{
